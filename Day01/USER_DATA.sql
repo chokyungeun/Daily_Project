@@ -1,0 +1,35 @@
+INSERT INTO `TEACHER` (`TEACHER_CODE`, `GROUP_TEACHER_ID`, `GROUP_TEACHER_NAME`, `GROUP_TEACHER_HP`) VALUES
+('1', 'RichKing', '강부자', '01090006000'),
+('2', 'SunJae', '이순재', '01015771577'),
+('3', 'Crab', '신구', '01090503210'),
+('4', 'Song', '송해', '01012122121');
+
+SELECT * FROM STUDENT;
+
+INSERT INTO `PROJECT` (`TEAM_CODE`, `TEAM_NAME`, `PROJECT_NAME`, `LEADER_CODE`, `GRADE`) VALUES
+('1', '7살차이조', 'Prolog;', '1', '100'),
+('2', '내알러지를부탁해', '내알러지를부탁해', '2', '98'),
+('3', 'EATTO', 'EATTO', '3', '68'),
+('4', 'QPAY', 'QPAY', '4', '85');
+
+INSERT INTO `STUDENT` (`STUDENT_CODE`, `TEACHER_CODE`, `TEAM_CODE`, `STUDENT_ACCOUNT`, `STUDENT_NAME`, `STUDENT_HP`, `STUDENT_AGE`, `STUDENT_GENDER`, `STUDENT_CURRICULUM`, `STUDENT_REGION`, `STUDENT_GROUP`, `ALGORITHM_GRADE`, `ALGORITHM_ACQUISITION_DATE`, `REG_DT`, `LAST_DT`) VALUES
+('1', '1', '1', 'Gian', '기안84', '01020002001', '36', 'M', '2', '광주', '1', 'A+', '2020-03-03 16:33:07', '2020-03-03 16:33:07', '2020-03-03 16:33:07'),
+	('2', '2', '2', 'Godness', '김태희', '01020002014', '37', 'F', '2', '대전', '2','A', '2020-03-03 16:33:07', '2020-03-03 16:33:07',  '2020-03-03 16:33:07'),
+	('3', '3', '3', 'Tiger', '김종국', '01010001001', '41', 'M', '1', '광주', '2', 'A', '2020-03-03 16:33:07', '2020-03-03 16:33:07',  '2020-03-03 16:33:07'),
+	('4', '4', '4', 'AsiaPrince', '이광수', '01010001003', '36', 'M', '1', '구미', '1', 'A', '2020-03-03 16:33:07', '2020-03-03 16:33:07',  '2020-03-03 16:33:07');
+	
+INSERT INTO `ATTENDANCE` (`STUDENT_CODE`,  `ATTENDANCE_DATE`, `ATTENDANCE`,  `ATTENDANCE_SIGN_IN` , `ATTENDANCE_SIGN_OUT`) VALUES
+('1', '2020-03-09', '1', '2020-03-09 08:00:07', '2020-03-09 16:33:07'),
+('2', '2020-03-09', NULL, NULL, NULL),
+('3', '2020-03-09', '1', '2020-03-09 08:30:09', '2020-03-09 16:37:07'),
+('4', '2020-03-09', '1', '2020-03-09 08:59:07', '2020-03-09 18:33:07');
+
+INSERT INTO `EXAM` (`STUDENT_CODE`, `EXAM_CODE`, `EXAM_SCORE`) VALUES
+('1', '1', '98'),
+('2', '1', '95'),
+('3', '1', '68'),
+('4', '1', '73'),
+('1', '2', '99'),
+('2', '2', '87'),
+('3', '2', '29'),
+('4', '2', '34');
